@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jGq-61-lqA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="InteractiveStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Beginning" translatesAutoresizingMaskIntoConstraints="NO" id="Hwz-8Z-bes">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKU-34-2gK">
+                                <rect key="frame" x="116" y="589" width="143" height="30"/>
+                                <state key="normal" title="Start Your Adventure"/>
+                                <connections>
+                                    <segue destination="SeJ-1d-8tA" kind="show" identifier="startAdventure" id="bvU-1A-RMC"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vBa-Qa-KYV">
+                                <rect key="frame" x="40" y="519" width="295" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="49L-fO-7nd"/>
+                                </connections>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="EKU-34-2gK" firstAttribute="top" secondItem="vBa-Qa-KYV" secondAttribute="bottom" constant="40" id="4SK-sP-klR"/>
+                            <constraint firstAttribute="trailing" secondItem="Hwz-8Z-bes" secondAttribute="trailing" id="9B5-GC-uPN"/>
+                            <constraint firstItem="Hwz-8Z-bes" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="D3t-WX-HgE"/>
+                            <constraint firstItem="EKU-34-2gK" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="JM5-ET-i9i"/>
+                            <constraint firstItem="vBa-Qa-KYV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="KYg-1V-km1"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="vBa-Qa-KYV" secondAttribute="trailing" constant="24" id="N1H-dr-16C"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="EKU-34-2gK" secondAttribute="bottom" constant="48" id="Ngc-Lz-3F2"/>
+                            <constraint firstItem="Hwz-8Z-bes" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="YDN-TH-nBh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Hwz-8Z-bes" secondAttribute="bottom" id="ZyM-oz-nD2"/>
+                            <constraint firstItem="vBa-Qa-KYV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="sbq-9U-2bM"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="AEC-Ta-iJT"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="vBa-Qa-KYV" id="fbX-Md-bG0"/>
+                        <outlet property="textFieldBottomConstraint" destination="4SK-sP-klR" id="Gdy-B3-CTo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1054" y="-550"/>
+        </scene>
+        <!--Page Controller-->
+        <scene sceneID="ca6-X0-Arw">
+            <objects>
+                <viewController id="SeJ-1d-8tA" customClass="PageController" customModule="InteractiveStory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="sD1-6Y-3ej"/>
+                        <viewControllerLayoutGuide type="bottom" id="NSB-JJ-AFt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XfL-oV-ZBj">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Krj-t0-R25" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1841" y="-550"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="jt5-XS-jVc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jGq-61-lqA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2wl-3S-3jW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AIL-OJ-OY4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="si5-QF-NKB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="221.59999999999999" y="-550.07496251874068"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Beginning" width="320" height="568"/>
+    </resources>
+</document>
