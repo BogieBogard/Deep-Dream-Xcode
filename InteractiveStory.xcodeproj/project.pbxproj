@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4AE0D54320E89A000077EE4B /* TestBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4AE0D54220E89A000077EE4B /* TestBeep.wav */; };
 		BE31C1A21E2E84EE0034F4EB /* HappyEnding.wav in Resources */ = {isa = PBXBuildFile; fileRef = BE31C19F1E2E84EE0034F4EB /* HappyEnding.wav */; };
 		BE31C1A31E2E84EE0034F4EB /* Ominous.wav in Resources */ = {isa = PBXBuildFile; fileRef = BE31C1A01E2E84EE0034F4EB /* Ominous.wav */; };
 		BE31C1A41E2E84EE0034F4EB /* PageTurn.wav in Resources */ = {isa = PBXBuildFile; fileRef = BE31C1A11E2E84EE0034F4EB /* PageTurn.wav */; };
@@ -22,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4AE0D54220E89A000077EE4B /* TestBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = TestBeep.wav; sourceTree = "<group>"; };
 		BE31C19F1E2E84EE0034F4EB /* HappyEnding.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = HappyEnding.wav; sourceTree = "<group>"; };
 		BE31C1A01E2E84EE0034F4EB /* Ominous.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ominous.wav; sourceTree = "<group>"; };
 		BE31C1A11E2E84EE0034F4EB /* PageTurn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = PageTurn.wav; sourceTree = "<group>"; };
@@ -52,6 +54,7 @@
 		BE31C19E1E2E847F0034F4EB /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4AE0D54220E89A000077EE4B /* TestBeep.wav */,
 				BE31C19F1E2E84EE0034F4EB /* HappyEnding.wav */,
 				BE31C1A01E2E84EE0034F4EB /* Ominous.wav */,
 				BE31C1A11E2E84EE0034F4EB /* PageTurn.wav */,
@@ -120,7 +123,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0820;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = "Treehouse Island";
 				TargetAttributes = {
 					BE88C78B1E2413B1001B2033 = {
@@ -153,6 +156,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE0D54320E89A000077EE4B /* TestBeep.wav in Resources */,
 				BE31C1A31E2E84EE0034F4EB /* Ominous.wav in Resources */,
 				BE88C79A1E2413B1001B2033 /* LaunchScreen.storyboard in Resources */,
 				BE88C7971E2413B1001B2033 /* Assets.xcassets in Resources */,
@@ -209,15 +213,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -258,15 +270,23 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

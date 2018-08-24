@@ -14,7 +14,7 @@ extension Story {
         switch self {
         case .droid, .home: return "HappyEnding"
         case .monster: return "Ominous"
-        default: return "PageTurn"
+        default: return "TestBeep"
         }
     }
     

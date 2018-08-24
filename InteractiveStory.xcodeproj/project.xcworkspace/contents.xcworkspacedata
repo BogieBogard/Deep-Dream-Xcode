@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:InteractiveStory.xcodeproj">
+      location = "group:/Users/matthewbogard/Documents/Deep-Dream/InteractiveStory/TestBeep1 - 7:1:18, 12.03 AM.wav">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
